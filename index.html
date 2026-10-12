@@ -4034,6 +4034,190 @@
     justify-self:start !important;
   }
 
+
+  .media-source-wrap{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:6px;}
+  .media-cam-btn{
+    background:#0f172a !important;color:#fff !important;border:none !important;
+    border-radius:8px !important;padding:6px 12px !important;font-size:12px !important;font-weight:700 !important;
+  }
+  .media-cam-btn:hover{opacity:.92;}
+
+
+  .rate-dept-btn-list{
+    display:flex;flex-direction:column;gap:8px;margin-top:8px;
+  }
+  .rate-dept-btn{
+    display:flex;align-items:center;justify-content:space-between;gap:12px;
+    width:100%;text-align:left;cursor:pointer;
+    background:#fff;border:1px solid #e8eef5;border-radius:12px;
+    padding:12px 14px;font:inherit;color:#0f172a;
+    box-shadow:0 2px 8px rgba(15,23,42,.04);
+  }
+  .rate-dept-btn:hover{border-color:#94a3b8;box-shadow:0 4px 12px rgba(15,23,42,.08);}
+  .rate-dept-btn-name{font-weight:700;font-size:13px;letter-spacing:.02em;}
+  .rate-dept-btn-score{
+    min-width:48px;text-align:center;font-weight:800;font-size:14px;
+    background:#f1f5f9;border-radius:8px;padding:6px 10px;color:#0f172a;
+  }
+  .cp-rating-box{
+    background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;
+    padding:12px 14px;margin:0 0 12px;
+  }
+  .cp-rating-box label{display:block;font-size:12px;font-weight:700;color:#64748b;margin-bottom:6px;}
+  .cp-rating-row{display:flex;flex-wrap:wrap;align-items:center;gap:10px;}
+  .cp-rating-row input[type="number"]{
+    width:100px;padding:8px 10px;border-radius:8px;border:1px solid #e2e8f0;font:inherit;
+  }
+
+
+  .cp-modal.cp-modal-entry{
+    max-width:1100px;width:94vw;max-height:92vh;overflow:auto;
+    padding:18px 20px 24px;border-radius:16px;background:#f8fafc;
+  }
+  .cp-dept-title{font-size:22px;font-weight:800;margin:0;color:#0f172a;}
+  .cp-entry-hero{
+    display:flex;flex-wrap:wrap;align-items:center;gap:12px;
+    margin:8px 0 18px;
+  }
+  .cp-hero-av{
+    width:56px;height:56px;border-radius:50%;overflow:hidden;
+    border:3px solid #93c5fd;background:#e2e8f0;flex:0 0 auto;
+  }
+  .cp-hero-av img{width:100%;height:100%;object-fit:cover;object-position:center top;}
+  .cp-hero-av-fb{
+    display:flex;align-items:center;justify-content:center;
+    font-weight:800;color:#fff;background:#0f172a;border-color:#0f172a;
+  }
+  .cp-hero-champ{
+    background:#0f172a;color:#fff;border-radius:12px;padding:8px 14px;
+    display:flex;flex-direction:column;min-width:110px;
+  }
+  .cp-hero-champ-lbl{font-size:10px;font-weight:800;letter-spacing:.08em;opacity:.85;}
+  .cp-hero-champ-name{font-size:14px;font-weight:700;}
+  .cp-hero-rating{
+    min-width:120px;padding:12px 14px;border-radius:12px;border:1px solid #e2e8f0;
+    background:#fff;font-size:15px;font-weight:600;
+  }
+  .cp-lh-split{
+    display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:18px;
+  }
+  @media(max-width:800px){ .cp-lh-split{grid-template-columns:1fr;} }
+  .cp-lh-col{
+    background:#fff;border:1px solid #e8eef5;border-radius:14px;padding:12px 14px;
+  }
+  .cp-lh-head{
+    display:flex;align-items:center;justify-content:space-between;gap:8px;
+    font-weight:800;font-size:14px;margin-bottom:8px;color:#0f172a;
+  }
+  .cp-lh-max{font-size:10px;font-weight:700;color:#94a3b8;letter-spacing:.04em;}
+  .cp-lh-empty{font-size:13px;color:#94a3b8;font-style:italic;padding:8px 0;}
+  .cp-add-lh{margin-top:8px;}
+  .cp-photo-section{margin:18px 0;}
+  .cp-photo-title{font-size:15px;font-weight:800;margin:0 0 12px;color:#0f172a;}
+  .cp-photo-slots{
+    display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;
+  }
+  @media(max-width:900px){
+    .cp-photo-slots{grid-template-columns:repeat(2,minmax(0,1fr));}
+  }
+  .cp-photo-slot{display:flex;flex-direction:column;gap:8px;}
+  .cp-photo-media{
+    position:relative;aspect-ratio:1;border-radius:14px;background:#e8eef5;
+    border:1px dashed #cbd5e1;overflow:hidden;
+    display:flex;align-items:center;justify-content:center;cursor:pointer;
+  }
+  .cp-photo-media img{width:100%;height:100%;object-fit:cover;}
+  .cp-photo-placeholder{font-size:13px;font-weight:600;color:#64748b;}
+  .cp-photo-file{
+    position:absolute;inset:0;opacity:0;cursor:pointer;width:100%;height:100%;
+  }
+  .cp-photo-comment{
+    width:100%;padding:10px 12px;border-radius:10px;border:1px solid #e2e8f0;
+    background:#fff;font:inherit;box-sizing:border-box;
+  }
+
+
+  /* Admin Input nav — 5S / KAIZEN / SYSTEM rows */
+  .admin-input-nav{display:flex;flex-direction:column;gap:10px;margin:8px 0 18px;}
+  .admin-input-row{
+    display:flex;align-items:stretch;gap:10px;flex-wrap:wrap;
+    border-radius:14px;padding:10px 12px;
+  }
+  .admin-row-5s{background:#eff6ff;}
+  .admin-row-kaizen{background:#ecfdf5;}
+  .admin-row-system{background:#fef2f2;}
+  .admin-input-cat{
+    flex:0 0 110px;min-width:90px;
+    display:flex;align-items:center;justify-content:center;
+    background:#1d4ed8;color:#fff;border-radius:12px;
+    font-weight:800;font-size:13px;letter-spacing:.04em;
+    padding:14px 12px;text-align:center;
+  }
+  .admin-input-pills{
+    flex:1 1 240px;display:flex;flex-wrap:wrap;gap:8px;align-items:center;
+  }
+  .admin-input-pills button{
+    border:0;cursor:pointer;background:#fff;color:#0f172a;
+    border-radius:999px;padding:9px 14px;
+    font-size:12px;font-weight:700;letter-spacing:.02em;
+    box-shadow:0 1px 3px rgba(15,23,42,.06);
+  }
+  .admin-input-pills button:hover{box-shadow:0 2px 8px rgba(15,23,42,.1);}
+  .admin-input-pills button.active{
+    background:#1d4ed8;color:#fff;
+  }
+  .admin-row-kaizen .admin-input-pills button.active{
+    background:#047857;color:#fff;
+  }
+  .admin-row-system .admin-input-pills button.active{
+    background:#b91c1c;color:#fff;
+  }
+
+
+  .s5-rate-pickers{
+    display:flex;flex-wrap:wrap;gap:16px;margin-bottom:16px;
+  }
+  .s5-rate-hub{
+    display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start;
+  }
+  @media(max-width:800px){
+    .s5-rate-hub{grid-template-columns:1fr;}
+  }
+  .s5-rate-col-title{
+    display:inline-flex;align-items:center;justify-content:center;
+    background:#2563eb;color:#fff;border-radius:999px;
+    font-weight:800;font-size:15px;padding:10px 28px;margin-bottom:14px;
+  }
+  .s5-rate-col-title-office{background:#2563eb;}
+  .s5-rate-dept-grid{
+    display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;
+  }
+  @media(max-width:700px){
+    .s5-rate-dept-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+  }
+  .s5-rate-dept-btn{
+    display:flex;align-items:center;justify-content:center;gap:6px;
+    min-height:44px;padding:10px 12px;border-radius:12px;cursor:pointer;
+    border:1px solid #e2e8f0;background:#fff;color:#0f172a;
+    font-size:13px;font-weight:600;text-align:center;
+    box-shadow:0 1px 3px rgba(15,23,42,.04);
+  }
+  .s5-rate-dept-btn:hover{border-color:#93c5fd;box-shadow:0 4px 12px rgba(37,99,235,.12);}
+  .s5-rate-dept-btn em{
+    font-style:normal;font-weight:800;font-size:12px;color:#2563eb;
+    background:#eff6ff;border-radius:8px;padding:2px 6px;
+  }
+
+
+  .uw-filter-row{
+    display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-bottom:12px;
+  }
+  .uw-filter-row label{font-size:12px;font-weight:700;color:#64748b;}
+  .uw-filter-row select,
+  .uw-filter-row input[type="search"]{
+    padding:8px 12px;border-radius:10px;border:1px solid #e2e8f0;font:inherit;background:#fff;
+  }
+
 </style>
 
 </head>
@@ -4084,9 +4268,7 @@ var CATEGORY_UNIT_INFO = {
 var ADMIN_PASSWORD = "5Skaizen#Floor";
 var ADMIN_PERM_OPTIONS = [
   ["depts","Departments & Champions"],
-  ["live","Do Live Audit"],
-  ["ratings","Floor Ratings"],
-  ["office-ratings","Office Ratings"],
+  ["ratings","5S Rating"],
   ["training","Training"],
   ["best-of-month","Best 5S Departments"],
   ["sharing","5S Sharing"],
@@ -4098,7 +4280,6 @@ var ADMIN_PERM_OPTIONS = [
   ["kaizen-sharing","Kaizen Sharing"],
   ["improvements","Improvements & Best Practices"],
   ["admins","Admin Accounts"],
-  ["mynotes","My Notes"],
   ["mydata","My Data"]
 ];
 function adminCan(tab){
@@ -4107,6 +4288,7 @@ function adminCan(tab){
   var me = (state.admins||[]).find(function(a){ return a.email && a.email.toLowerCase()===String(state.adminEmail).toLowerCase(); });
   if(!me) return true;
   if(!me.permissions) return true; // legacy full access
+  if(tab==="ratings") return !!(me.permissions.ratings || me.permissions["office-ratings"]);
   return !!me.permissions[tab];
 }
 function defaultPermissions(allOn){
@@ -5505,6 +5687,7 @@ function openOrgModal(kind){
   modal.appendChild(body);
   overlay.appendChild(modal);
   document.body.appendChild(overlay);
+  try{ enableMediaSourcePickers(overlay); }catch(e){}
   requestAnimationFrame(function(){ overlay.classList.add('open'); });
   function close(){
     overlay.classList.remove('open');
@@ -5588,6 +5771,7 @@ function renderMainContent(mainEl){
   // Swap content in one step (avoids blank flash)
   while(mainEl.firstChild) mainEl.removeChild(mainEl.firstChild);
   if(node) mainEl.appendChild(node);
+  try{ enableMediaSourcePickers(mainEl); }catch(e){}
 }
 
 function render(){
@@ -5906,6 +6090,96 @@ function compressImageFile(file, maxDim, quality){
 }
 // wires a camera button to a text input holding a photo URL / data-URI.
 // File picker: gallery and camera both available on mobile (no capture= force-camera)ectly.
+
+/** Enable Camera + File for every image/video file input in a root. */
+function enableMediaSourcePickers(root){
+  root = root || document;
+  try{
+    var inputs = root.querySelectorAll('input[type="file"]');
+    for(var i=0;i<inputs.length;i++){
+      var inp = inputs[i];
+      if(inp.dataset.mediaSourceReady === "1") continue;
+      var acc = String(inp.accept || "").toLowerCase();
+      // Skip non-media (json, office docs only, etc.)
+      var isImage = acc.indexOf("image") >= 0 || acc.indexOf(".png") >= 0 || acc.indexOf(".jpg") >= 0 || acc.indexOf(".jpeg") >= 0 || acc.indexOf(".webp") >= 0 || acc.indexOf(".gif") >= 0;
+      var isVideo = acc.indexOf("video") >= 0 || acc.indexOf(".mp4") >= 0 || acc.indexOf(".webm") >= 0 || acc.indexOf(".mov") >= 0;
+      var isGenericTool = acc.indexOf(".pdf") >= 0 || acc.indexOf(".doc") >= 0 || acc.indexOf("json") >= 0;
+      if(isGenericTool && !isImage && !isVideo) continue;
+      if(!isImage && !isVideo && acc) continue;
+      if(!acc){
+        // default choose-file for pictures often has no accept — treat as image
+        inp.accept = "image/*";
+        isImage = true;
+      }
+      inp.dataset.mediaSourceReady = "1";
+
+      // Prefer open picker that offers Camera OR Files (do not force capture on main input)
+      if(isImage && isVideo) inp.accept = "image/*,video/*";
+      else if(isImage) inp.accept = "image/*";
+      else if(isVideo) inp.accept = "video/*";
+
+      // Build compact actions: Files | Camera
+      var wrap = document.createElement("div");
+      wrap.className = "media-source-wrap";
+      wrap.style.cssText = "display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:4px;";
+
+      // Keep original input usable (gallery / files)
+      inp.title = (isVideo && !isImage) ? "Choose video from device" : (isImage && isVideo) ? "Choose photo or video from device" : "Choose photo from device";
+
+      var camBtn = document.createElement("button");
+      camBtn.type = "button";
+      camBtn.className = "btn small media-cam-btn";
+      camBtn.textContent = isVideo && !isImage ? "Use camera" : "Use camera";
+      camBtn.title = "Open device camera";
+      camBtn.style.cssText = "flex:0 0 auto;";
+
+      var camInp = document.createElement("input");
+      camInp.type = "file";
+      camInp.accept = inp.accept;
+      camInp.setAttribute("capture", "environment");
+      camInp.style.display = "none";
+      camInp.tabIndex = -1;
+
+      camBtn.addEventListener("click", function(e){
+        e.preventDefault();
+        e.stopPropagation();
+        camInp.value = "";
+        camInp.click();
+      });
+
+      camInp.addEventListener("change", function(){
+        if(!camInp.files || !camInp.files.length) return;
+        try{
+          var dt = new DataTransfer();
+          for(var f=0; f<camInp.files.length; f++) dt.items.add(camInp.files[f]);
+          inp.files = dt.files;
+        }catch(err){
+          // Fallback: some browsers block assigning files — fire via copy is not possible; trigger handlers manually not available
+        }
+        try{
+          inp.dispatchEvent(new Event("change", { bubbles: true }));
+        }catch(err2){
+          var ev = document.createEvent("HTMLEvents");
+          ev.initEvent("change", true, false);
+          inp.dispatchEvent(ev);
+        }
+      });
+
+      // Insert wrap after input
+      if(inp.parentNode){
+        // Avoid double-wrapping
+        if(inp.parentNode.classList && inp.parentNode.classList.contains("media-source-wrap")) continue;
+        inp.parentNode.insertBefore(wrap, inp.nextSibling);
+        wrap.appendChild(camBtn);
+        wrap.appendChild(camInp);
+      }
+    }
+  }catch(err){
+    console.error(err);
+  }
+}
+
+
 function wirePhotoField(cameraBtn, urlInput, previewImg){
   if(cameraBtn.dataset.wired) return;
   cameraBtn.dataset.wired = "1";
@@ -7973,12 +8247,53 @@ function renderAdminUnwantedItems(){
     render();
   });
 
-  // list recent
+  // list recent — filter by department / zone
   var recent = el('<div class="admin-panel" style="margin-top:16px;"></div>');
   recent.appendChild(el('<h4 style="margin:0 0 10px;">Recent records</h4>'));
-  var items = (state.unwantedItems||[]).slice(0,30);
-  if(!items.length) recent.appendChild(el('<div class="note">No records yet.</div>'));
-  else {
+  var filterRow = el(
+    '<div class="uw-filter-row">'+
+      '<label>Department</label>'+
+      '<select id="uw-filter-dept">'+
+        '<option value="">All departments</option>'+
+      '</select>'+
+      '<input type="search" id="uw-filter-search" placeholder="Search department or item…" style="min-width:180px;">'+
+    '</div>'
+  );
+  recent.appendChild(filterRow);
+  var listHost = el('<div id="uw-recent-host"></div>');
+  recent.appendChild(listHost);
+
+  // Populate department options from config + existing records
+  var deptSelect = filterRow.querySelector('#uw-filter-dept');
+  var deptNames = {};
+  (depts||[]).forEach(function(d){ if(d && d.name) deptNames[d.name] = true; });
+  (state.unwantedItems||[]).forEach(function(r){
+    if(r.zoneName) deptNames[r.zoneName] = true;
+  });
+  Object.keys(deptNames).sort(function(a,b){ return a.localeCompare(b); }).forEach(function(name){
+    deptSelect.appendChild(el('<option value="'+escapeAttr(name)+'">'+escapeHtml(name)+'</option>'));
+  });
+  if(state.uwFilterDept) deptSelect.value = state.uwFilterDept;
+  if(state.uwFilterSearch) filterRow.querySelector('#uw-filter-search').value = state.uwFilterSearch;
+
+  function renderRecentList(){
+    var filtDept = (deptSelect.value || "").trim();
+    var q = (filterRow.querySelector('#uw-filter-search').value || "").trim().toLowerCase();
+    state.uwFilterDept = filtDept;
+    state.uwFilterSearch = q;
+    var items = (state.unwantedItems||[]).filter(function(r){
+      if(filtDept && String(r.zoneName||"") !== filtDept) return false;
+      if(q){
+        var hay = (String(r.zoneName||"")+" "+String(r.item||"")+" "+String(r.type||"")+" "+String(r.action||"")).toLowerCase();
+        if(hay.indexOf(q) < 0) return false;
+      }
+      return true;
+    }).slice(0,50);
+    listHost.innerHTML = "";
+    if(!items.length){
+      listHost.appendChild(el('<div class="note">'+( (state.unwantedItems||[]).length ? 'No records for this department / search.' : 'No records yet.')+'</div>'));
+      return;
+    }
     var t = el('<div class="unwanted-table-wrap"><table class="unwanted-table"><thead><tr><th>Date</th><th>Zone</th><th>Item</th><th>Type</th><th>Qty</th><th>Action</th><th></th></tr></thead><tbody></tbody></table></div>');
     var tb = t.querySelector('tbody');
     items.forEach(function(r){
@@ -7993,8 +8308,11 @@ function renderAdminUnwantedItems(){
       tr.lastChild.appendChild(del);
       tb.appendChild(tr);
     });
-    recent.appendChild(t);
+    listHost.appendChild(t);
   }
+  renderRecentList();
+  deptSelect.addEventListener('change', renderRecentList);
+  filterRow.querySelector('#uw-filter-search').addEventListener('input', renderRecentList);
   wrap.appendChild(recent);
   return wrap;
 }
@@ -9925,37 +10243,41 @@ function renderAdmin(){
   wrap.appendChild(el('<div class="pagehead"><div><div class="eyebrow">Administrator'+(state.adminEmail && state.adminEmail!=="master" ? " \u2014 "+escapeHtml(state.adminEmail) : "")+'</div><h2>Input</h2></div></div>'));
 
   var tabs = el(''+
-    '<div class="tabline">'+
-      '<div class="tabline-group tabline-5s">'+
-        '<span class="tabline-label">5S</span>'+
-        '<button data-atab="depts" class="'+(state.adminAdminTab==="depts"?"active":"")+'">Departments &amp; Champions</button>'+
-        '<button data-atab="live" class="'+(state.adminAdminTab==="live"?"active":"")+'">Do Live Audit</button>'+
-        '<button data-atab="ratings" class="'+(state.adminAdminTab==="ratings"?"active":"")+'">Floor Ratings</button>'+
-        '<button data-atab="office-ratings" class="'+(state.adminAdminTab==="office-ratings"?"active":"")+'">Office Ratings</button>'+
-        '<button data-atab="training" class="'+(state.adminAdminTab==="training"?"active":"")+'">Training</button>'+
-        '<button data-atab="best-of-month" class="'+(state.adminAdminTab==="best-of-month"?"active":"")+'">Best 5S Departments</button>'+
-        '<button data-atab="sharing" class="'+(state.adminAdminTab==="sharing"?"active":"")+'">5S Sharing</button>'+
-        '<button data-atab="waste" class="'+(state.adminAdminTab==="waste"?"active":"")+'">Total Waste</button>'+
-        '<button data-atab="unwanted" class="'+(state.adminAdminTab==="unwanted"?"active":"")+'">Unwanted Items</button>'+
-        '<button data-atab="visits" class="'+(state.adminAdminTab==="visits"?"active":"")+'">Visits</button>'+
-        '<button data-atab="beyond" class="'+(state.adminAdminTab==="beyond"?"active":"")+'">Beyond Boundaries</button>'+
+    '<div class="admin-input-nav">'+
+      '<div class="admin-input-row admin-row-5s">'+
+        '<div class="admin-input-cat">5S</div>'+
+        '<div class="admin-input-pills">'+
+          '<button type="button" data-atab="depts" class="'+(state.adminAdminTab==="depts"?"active":"")+'">Departments &amp; Champion</button>'+
+          '<button type="button" data-atab="ratings" class="'+(state.adminAdminTab==="ratings"||state.adminAdminTab==="office-ratings"?"active":"")+'">5S Rating</button>'+
+          '<button type="button" data-atab="training" class="'+(state.adminAdminTab==="training"?"active":"")+'">Training</button>'+
+          '<button type="button" data-atab="best-of-month" class="'+(state.adminAdminTab==="best-of-month"?"active":"")+'">Best 5S Departments</button>'+
+          '<button type="button" data-atab="sharing" class="'+(state.adminAdminTab==="sharing"?"active":"")+'">5S Sharing</button>'+
+          '<button type="button" data-atab="waste" class="'+(state.adminAdminTab==="waste"?"active":"")+'">Waste</button>'+
+          '<button type="button" data-atab="unwanted" class="'+(state.adminAdminTab==="unwanted"?"active":"")+'">Unwanted Items</button>'+
+          '<button type="button" data-atab="visits" class="'+(state.adminAdminTab==="visits"?"active":"")+'">Visits</button>'+
+          '<button type="button" data-atab="beyond" class="'+(state.adminAdminTab==="beyond"?"active":"")+'">Beyond Boundaries</button>'+
+        '</div>'+
       '</div>'+
-      '<div class="tabline-group tabline-kaizen">'+
-        '<span class="tabline-label">Kaizen</span>'+
-        '<button data-atab="kaizen" class="'+(state.adminAdminTab==="kaizen"?"active":"")+'">Kaizen Entries</button>'+
-        '<button data-atab="kaizen-sharing" class="'+(state.adminAdminTab==="kaizen-sharing"?"active":"")+'">Kaizen Sharing</button>'+
-        '<button data-atab="improvements" class="'+(state.adminAdminTab==="improvements"?"active":"")+'">Improvements &amp; Best Practices</button>'+
+      '<div class="admin-input-row admin-row-kaizen">'+
+        '<div class="admin-input-cat">KAIZEN</div>'+
+        '<div class="admin-input-pills">'+
+          '<button type="button" data-atab="kaizen" class="'+(state.adminAdminTab==="kaizen"?"active":"")+'">Kaizen Entries</button>'+
+          '<button type="button" data-atab="kaizen-sharing" class="'+(state.adminAdminTab==="kaizen-sharing"?"active":"")+'">Kaizen Sharing</button>'+
+          '<button type="button" data-atab="improvements" class="'+(state.adminAdminTab==="improvements"?"active":"")+'">Improvements &amp; Best Practices</button>'+
+        '</div>'+
       '</div>'+
-      '<div class="tabline-group tabline-system">'+
-        '<span class="tabline-label">System</span>'+
-        '<button data-atab="admins" class="'+(state.adminAdminTab==="admins"?"active":"")+'">Admin Accounts</button>'+
-        '<button data-atab="mynotes" class="btn-mynotes '+(state.adminAdminTab==="mynotes"?"active":"")+'">My Notes</button>'+
-        '<button data-atab="mydata" class="'+(state.adminAdminTab==="mydata"?"active":"")+'">My Data</button>'+
+      '<div class="admin-input-row admin-row-system">'+
+        '<div class="admin-input-cat">SYSTEM</div>'+
+        '<div class="admin-input-pills">'+
+          '<button type="button" data-atab="admins" class="'+(state.adminAdminTab==="admins"?"active":"")+'">User Accounts</button>'+
+          '<button type="button" data-atab="mydata" class="'+(state.adminAdminTab==="mydata"?"active":"")+'">My Data</button>'+
+        '</div>'+
       '</div>'+
     '</div>'
   );
 
   wrap.appendChild(tabs);
+  if(state.adminAdminTab==="live" || state.adminAdminTab==="mynotes") state.adminAdminTab = "depts";
   tabs.querySelectorAll('[data-atab]').forEach(function(b){
     var t = b.getAttribute('data-atab');
     if(!adminCan(t)) b.style.display = 'none';
@@ -9983,8 +10305,7 @@ function renderAdmin(){
     if(!adminCan(state.adminAdminTab)){
       host.appendChild(el('<div class="empty-state">You do not have permission for this section.</div>'));
     }
-    else if(state.adminAdminTab==="ratings") host.appendChild(renderAdminRatings());
-    else if(state.adminAdminTab==="office-ratings") host.appendChild(renderAdminOfficeRatings());
+    else if(state.adminAdminTab==="ratings" || state.adminAdminTab==="office-ratings") host.appendChild(renderAdmin5SRatingHub());
     else if(state.adminAdminTab==="training") host.appendChild(renderAdminTraining());
     else if(state.adminAdminTab==="depts") host.appendChild(renderAdminDepts());
     else if(state.adminAdminTab==="detail"){ state.adminAdminTab="ratings"; host.appendChild(renderAdminRatings()); }
@@ -9995,7 +10316,6 @@ function renderAdmin(){
     else if(state.adminAdminTab==="improvements") host.appendChild(renderAdminImprovements());
     else if(state.adminAdminTab==="visits") host.appendChild(renderAdminVisits());
     else if(state.adminAdminTab==="beyond") host.appendChild(renderAdminBeyondBoundaries());
-    else if(state.adminAdminTab==="live") host.appendChild(renderAdminLiveAudit());
     else if(state.adminAdminTab==="waste") host.appendChild(renderAdminWaste());
     else if(state.adminAdminTab==="unwanted") host.appendChild(renderAdminUnwantedItems());
     else if(state.adminAdminTab==="admins") host.appendChild(renderAdminAccounts());
@@ -10458,17 +10778,21 @@ function openDeptCommentsPhotosModal(opts){
   var back = el('<div class="cp-modal-back" id="cp-modal-back"></div>');
   var modal = el('<div class="cp-modal"></div>');
   var head = el('<div class="cp-modal-head"></div>');
-  head.appendChild(el('<h3>'+escapeHtml(deptName)+' — Comments &amp; Photos</h3>'));
+  head.appendChild(el('<h3 class="cp-dept-title">'+escapeHtml(deptName)+'</h3>'));
   var closeBtn = el('<button type="button" class="btn small">Close</button>');
-  closeBtn.addEventListener('click', function(){ back.remove(); });
+  closeBtn.addEventListener('click', function(){
+    back.remove();
+    if(typeof opts.onClose === "function") opts.onClose();
+  });
   head.appendChild(closeBtn);
   modal.appendChild(head);
-  modal.appendChild(el('<div class="note" style="margin-bottom:10px;">Lowlights, Highlights, Worst-practice photos and Best-practice photos for this department.</div>'));
+  modal.classList.add("cp-modal-entry");
   var host = el('<div class="cp-modal-body"><div class="note">Loading\u2026</div></div>');
   modal.appendChild(host);
   back.appendChild(modal);
   back.addEventListener('click', function(e){ if(e.target===back) back.remove(); });
   document.body.appendChild(back);
+  try{ enableMediaSourcePickers(back); }catch(e){}
 
   loadFn(deptId).then(function(detail){
     if(!detail.comments) detail.comments = [];
@@ -10482,19 +10806,66 @@ function openDeptCommentsPhotosModal(opts){
     detail.bestPhotos = detail.bestPhotos.slice(0,5);
     host.innerHTML = '';
 
-    var split = el('<div class="audit-comments-split" style="margin-top:4px;"></div>');
-    var lowCol = el('<div></div>');
-    var highCol = el('<div></div>');
-    lowCol.appendChild(el('<h4 style="font-size:13px;margin:8px 0;text-transform:uppercase;letter-spacing:.05em;color:var(--red);">Lowlights (max 6)</h4>'));
-    var cWrap = el('<div></div>');
+    // Champion + Rating hero (matches audit entry layout)
+    var champName = "Unassigned";
+    var champPhoto = "";
+    try{
+      var listSrc = scope==="office" ? (state.config.officeDepartments||[]) : (state.config.departments||[]);
+      for(var ci=0;ci<listSrc.length;ci++){
+        if(listSrc[ci].id===deptId){
+          champName = listSrc[ci].champion || "Unassigned";
+          champPhoto = listSrc[ci].championPhoto || "";
+          break;
+        }
+      }
+    }catch(e){}
+    var curVal = "";
+    if(opts.allowRatingEdit && opts.ratingKey){
+      var rStore0 = scope==="office" ? state.officeRatings : state.ratings;
+      if(!rStore0[opts.ratingKey] || typeof rStore0[opts.ratingKey] !== "object") rStore0[opts.ratingKey] = {};
+      var cur0 = rStore0[opts.ratingKey][deptId];
+      curVal = (typeof cur0==="number") ? String(cur0) : "";
+    }
+    var ini = (champName && champName!=="Unassigned")
+      ? champName.split(/\s+/).filter(Boolean).slice(0,2).map(function(w){return w.charAt(0);}).join("").toUpperCase()
+      : "?";
+    var avHtml = champPhoto
+      ? '<div class="cp-hero-av"><img src="'+escapeAttr(champPhoto)+'" alt=""></div>'
+      : '<div class="cp-hero-av cp-hero-av-fb">'+escapeHtml(ini)+'</div>';
+    var hero = el(
+      '<div class="cp-entry-hero">'+
+        avHtml+
+        '<div class="cp-hero-champ"><span class="cp-hero-champ-lbl">CHAMPION</span><span class="cp-hero-champ-name">'+escapeHtml(champName)+'</span></div>'+
+        (opts.allowRatingEdit
+          ? '<input type="number" inputmode="decimal" step="0.1" min="0" max="10" id="cp-rating-input" class="cp-hero-rating" value="'+escapeAttr(curVal)+'" placeholder="Rating">'
+          : '')+
+      '</div>'
+    );
+    host.appendChild(hero);
+
+    // Ensure 5 photo slots
+    while(detail.worstPhotos.length < 5) detail.worstPhotos.push({url:"",comment:""});
+    while(detail.bestPhotos.length < 5) detail.bestPhotos.push({url:"",comment:""});
+    detail.worstPhotos = detail.worstPhotos.slice(0,5);
+    detail.bestPhotos = detail.bestPhotos.slice(0,5);
+
+    // Lowlights | Highlights
+    var split = el('<div class="cp-lh-split"></div>');
+    var lowCol = el('<div class="cp-lh-col"></div>');
+    var highCol = el('<div class="cp-lh-col"></div>');
+    lowCol.appendChild(el('<div class="cp-lh-head"><span>Lowlights</span><span class="cp-lh-max">MAX 6</span></div>'));
+    var cWrap = el('<div class="cp-lh-body"></div>');
     function renderComments(){
       cWrap.innerHTML="";
+      if(!detail.comments.length){
+        cWrap.appendChild(el('<div class="cp-lh-empty">No lowlight comments recorded yet.</div>'));
+      }
       detail.comments.forEach(function(c,i){
-        var r = el('<div class="cp-comment-row"><textarea data-cidx="'+i+'" rows="2" placeholder="Short phrase (2 lines max)">'+escapeHtml(c)+'</textarea><button type="button" class="btn small danger" data-cdel="'+i+'">Remove</button></div>');
+        var r = el('<div class="cp-comment-row"><textarea data-cidx="'+i+'" rows="2" placeholder="Lowlight…">'+escapeHtml(c)+'</textarea><button type="button" class="btn small danger" data-cdel="'+i+'">×</button></div>');
         cWrap.appendChild(r);
       });
       if(detail.comments.length<6){
-        var add = el('<button type="button" class="btn small">+ Add lowlight</button>');
+        var add = el('<button type="button" class="btn small cp-add-lh">+ Add lowlight</button>');
         add.addEventListener('click', function(){ detail.comments.push(""); renderComments(); });
         cWrap.appendChild(add);
       }
@@ -10505,16 +10876,19 @@ function openDeptCommentsPhotosModal(opts){
     renderComments();
     lowCol.appendChild(cWrap);
 
-    highCol.appendChild(el('<h4 style="font-size:13px;margin:8px 0;text-transform:uppercase;letter-spacing:.05em;color:var(--green);">Highlights (max 6)</h4>'));
-    var hWrap = el('<div></div>');
+    highCol.appendChild(el('<div class="cp-lh-head cp-lh-head-hi"><span>Highlights</span><span class="cp-lh-max">MAX 6</span></div>'));
+    var hWrap = el('<div class="cp-lh-body"></div>');
     function renderHighlights(){
       hWrap.innerHTML="";
+      if(!detail.highlightComments.length){
+        hWrap.appendChild(el('<div class="cp-lh-empty">No highlight comments recorded yet.</div>'));
+      }
       detail.highlightComments.forEach(function(c,i){
-        var r = el('<div class="cp-comment-row"><textarea data-hidx="'+i+'" rows="2" placeholder="Short phrase (2 lines max)">'+escapeHtml(c)+'</textarea><button type="button" class="btn small danger" data-hdel="'+i+'">Remove</button></div>');
+        var r = el('<div class="cp-comment-row"><textarea data-hidx="'+i+'" rows="2" placeholder="Highlight…">'+escapeHtml(c)+'</textarea><button type="button" class="btn small danger" data-hdel="'+i+'">×</button></div>');
         hWrap.appendChild(r);
       });
       if(detail.highlightComments.length<6){
-        var add = el('<button type="button" class="btn small">+ Add highlight</button>');
+        var add = el('<button type="button" class="btn small cp-add-lh">+ Add highlight</button>');
         add.addEventListener('click', function(){ detail.highlightComments.push(""); renderHighlights(); });
         hWrap.appendChild(add);
       }
@@ -10528,70 +10902,47 @@ function openDeptCommentsPhotosModal(opts){
     split.appendChild(highCol);
     host.appendChild(split);
 
-    // Photos
-    var photosSplit = el('<div class="audit-comments-split" style="margin-top:16px;"></div>');
-    var worstCol = el('<div></div>');
-    var bestCol = el('<div></div>');
-    worstCol.appendChild(el('<h4 style="font-size:13px;margin:8px 0;text-transform:uppercase;letter-spacing:.05em;color:var(--red);">Worst-practice photos (max 5)</h4>'));
-    var wWrap = el('<div></div>');
-    function renderWorst(){
-      wWrap.innerHTML="";
-      detail.worstPhotos.forEach(function(p,i){
-        var row = el('<div class="photo-admin-group" style="margin-bottom:10px;padding:10px;border:1px solid var(--line);border-radius:10px;"></div>');
-        row.appendChild(el('<div class="photo-step-title before-step">BEFORE</div>'));
-        var grid = el('<div class="photo-admin-grid" style="display:flex;flex-wrap:wrap;gap:8px;align-items:center;"></div>');
-        if(p.url) grid.appendChild(el('<img src="'+escapeAttr(p.url)+'" style="width:72px;height:54px;object-fit:cover;border-radius:8px;">'));
-        grid.appendChild(el('<input type="file" accept="image/*" data-wfile="'+i+'" data-wfilefield="url">'));
-        grid.appendChild(el('<button type="button" class="btn small danger" data-wdel="'+i+'">Remove</button>'));
-        row.appendChild(grid);
-        row.appendChild(el('<div class="photo-step-title after-step">AFTER</div>'));
-        var afterGrid = el('<div class="photo-admin-grid" style="display:flex;flex-wrap:wrap;gap:8px;align-items:center;"></div>');
-        if(p.afterUrl) afterGrid.appendChild(el('<img src="'+escapeAttr(p.afterUrl)+'" style="width:72px;height:54px;object-fit:cover;border-radius:8px;">'));
-        afterGrid.appendChild(el('<input type="file" accept="image/*" data-wfile="'+i+'" data-wfilefield="afterUrl">'));
-        row.appendChild(afterGrid);
-        row.appendChild(el('<textarea rows="2" placeholder="Comment…" data-wcomment="'+i+'" style="width:100%;margin-top:6px;">'+escapeHtml(p.comment||'')+'</textarea>'));
-        wWrap.appendChild(row);
-      });
-      if(detail.worstPhotos.length<5){
-        var add = el('<button type="button" class="btn small">+ Add worst photo</button>');
-        add.addEventListener('click', function(){ detail.worstPhotos.push({url:"",afterUrl:"",comment:""}); renderWorst(); });
-        wWrap.appendChild(add);
+    // Photo slot grid helper
+    function buildPhotoSlots(kind, arr){
+      var sec = el('<div class="cp-photo-section"></div>');
+      sec.appendChild(el('<h4 class="cp-photo-title">5 '+kind+' Practice Photos</h4>'));
+      var grid = el('<div class="cp-photo-slots"></div>');
+      for(var i=0;i<5;i++){
+        (function(idx){
+          if(!arr[idx]) arr[idx] = {url:"",comment:""};
+          var slot = el('<div class="cp-photo-slot"></div>');
+          var media = el('<div class="cp-photo-media"></div>');
+          if(arr[idx].url){
+            media.appendChild(el('<img src="'+escapeAttr(arr[idx].url)+'" alt="">'));
+          } else {
+            media.appendChild(el('<span class="cp-photo-placeholder">Choose File</span>'));
+          }
+          var file = el('<input type="file" accept="image/*" class="cp-photo-file">');
+          media.appendChild(file);
+          slot.appendChild(media);
+          var cmt = el('<input type="text" class="cp-photo-comment" placeholder="Comment" value="'+escapeAttr(arr[idx].comment||'')+'">');
+          slot.appendChild(cmt);
+          file.addEventListener('change', async function(){
+            var f = file.files && file.files[0];
+            if(!f) return;
+            try{
+              arr[idx].url = await fileToDataUrl(f);
+              media.innerHTML = "";
+              media.appendChild(el('<img src="'+escapeAttr(arr[idx].url)+'" alt="">'));
+              media.appendChild(file);
+              file.value = "";
+              try{ enableMediaSourcePickers(slot); }catch(e){}
+            }catch(err){ alert("Could not load image"); }
+          });
+          cmt.addEventListener('input', function(){ arr[idx].comment = cmt.value; });
+          grid.appendChild(slot);
+        })(i);
       }
-      wWrap.querySelectorAll('[data-wdel]').forEach(function(b){
-        b.addEventListener('click', function(){ detail.worstPhotos.splice(parseInt(b.getAttribute('data-wdel'),10),1); renderWorst(); });
-      });
+      sec.appendChild(grid);
+      return sec;
     }
-    renderWorst();
-    worstCol.appendChild(wWrap);
-
-    bestCol.appendChild(el('<h4 style="font-size:13px;margin:8px 0;text-transform:uppercase;letter-spacing:.05em;color:var(--green);">Best-practice photos (max 5)</h4>'));
-    var bWrap = el('<div></div>');
-    function renderBest(){
-      bWrap.innerHTML="";
-      detail.bestPhotos.forEach(function(p,i){
-        var row = el('<div class="photo-admin-group" style="margin-bottom:10px;padding:10px;border:1px solid var(--line);border-radius:10px;"></div>');
-        var grid = el('<div style="display:flex;flex-wrap:wrap;gap:8px;align-items:center;"></div>');
-        if(p.url) grid.appendChild(el('<img src="'+escapeAttr(p.url)+'" style="width:72px;height:54px;object-fit:cover;border-radius:8px;">'));
-        grid.appendChild(el('<input type="file" accept="image/*" data-bfile="'+i+'">'));
-        grid.appendChild(el('<button type="button" class="btn small danger" data-bdel="'+i+'">Remove</button>'));
-        row.appendChild(grid);
-        row.appendChild(el('<textarea rows="2" placeholder="Comment…" data-bcomment="'+i+'" style="width:100%;margin-top:6px;">'+escapeHtml(p.comment||'')+'</textarea>'));
-        bWrap.appendChild(row);
-      });
-      if(detail.bestPhotos.length<5){
-        var add = el('<button type="button" class="btn small">+ Add best photo</button>');
-        add.addEventListener('click', function(){ detail.bestPhotos.push({url:"",comment:""}); renderBest(); });
-        bWrap.appendChild(add);
-      }
-      bWrap.querySelectorAll('[data-bdel]').forEach(function(b){
-        b.addEventListener('click', function(){ detail.bestPhotos.splice(parseInt(b.getAttribute('data-bdel'),10),1); renderBest(); });
-      });
-    }
-    renderBest();
-    bestCol.appendChild(bWrap);
-    photosSplit.appendChild(worstCol);
-    photosSplit.appendChild(bestCol);
-    host.appendChild(photosSplit);
+    host.appendChild(buildPhotoSlots("Worst", detail.worstPhotos));
+    host.appendChild(buildPhotoSlots("Best", detail.bestPhotos));
 
     var saveRow = el('<div style="margin-top:16px;display:flex;gap:8px;align-items:center;"></div>');
     var saveBtn = el('<button type="button" class="btn primary">Save Comments &amp; Photos</button>');
@@ -10605,36 +10956,33 @@ function openDeptCommentsPhotosModal(opts){
       });
       detail.comments = detail.comments.filter(function(c){return String(c).trim()!=="";}).slice(0,6);
       detail.highlightComments = detail.highlightComments.filter(function(c){return String(c).trim()!=="";}).slice(0,6);
-
-      var wf = Array.prototype.slice.call(wWrap.querySelectorAll('input[data-wfile]'));
-      for(var z=0;z<wf.length;z++){
-        if(wf[z].files && wf[z].files[0]){
-          var zi=parseInt(wf[z].getAttribute('data-wfile'),10);
-          var zf=wf[z].getAttribute('data-wfilefield');
-          detail.worstPhotos[zi][zf] = await fileToDataUrl(wf[z].files[0]);
-        }
-      }
-      wWrap.querySelectorAll('textarea[data-wcomment]').forEach(function(ta){
-        var i = parseInt(ta.getAttribute('data-wcomment'),10);
-        detail.worstPhotos[i].comment = ta.value.trim();
+      detail.worstPhotos = (detail.worstPhotos||[]).slice(0,5).map(function(p){
+        return { url: (p && p.url) || "", comment: (p && p.comment) || "" };
       });
-      var bf = Array.prototype.slice.call(bWrap.querySelectorAll('input[data-bfile]'));
-      for(var z=0;z<bf.length;z++){
-        if(bf[z].files && bf[z].files[0]){
-          var zi=parseInt(bf[z].getAttribute('data-bfile'),10);
-          detail.bestPhotos[zi].url = await fileToDataUrl(bf[z].files[0]);
-        }
-      }
-      bWrap.querySelectorAll('textarea[data-bcomment]').forEach(function(ta){
-        var i = parseInt(ta.getAttribute('data-bcomment'),10);
-        detail.bestPhotos[i].comment = ta.value.trim();
+      detail.bestPhotos = (detail.bestPhotos||[]).slice(0,5).map(function(p){
+        return { url: (p && p.url) || "", comment: (p && p.comment) || "" };
       });
-      detail.worstPhotos = detail.worstPhotos.slice(0,5);
-      detail.bestPhotos = detail.bestPhotos.slice(0,5);
+      // Save rating from hero input
+      if(opts.allowRatingEdit && opts.ratingKey){
+        var rateInp = document.getElementById("cp-rating-input");
+        var rStore = scope==="office" ? state.officeRatings : state.ratings;
+        if(!rStore[opts.ratingKey] || typeof rStore[opts.ratingKey] !== "object") rStore[opts.ratingKey] = {};
+        var raw = rateInp ? String(rateInp.value||"").trim() : "";
+        if(raw==="") delete rStore[opts.ratingKey][deptId];
+        else {
+          var num = parseFloat(raw);
+          if(isNaN(num) || num<0 || num>10){ alert("Enter a rating between 0 and 10."); return; }
+          rStore[opts.ratingKey][deptId] = Math.round(num*10)/10;
+        }
+        try{
+          if(scope==="office") await saveOfficeRatings();
+          else await saveRatings();
+        }catch(e){}
+      }
       await saveFn(deptId);
       saveMsg.style.display='inline';
       setTimeout(function(){ saveMsg.style.display='none'; }, 2000);
-      renderComments(); renderHighlights(); renderWorst(); renderBest();
+      renderComments(); renderHighlights();
     });
     saveRow.appendChild(saveBtn); saveRow.appendChild(saveMsg);
     host.appendChild(saveRow);
@@ -10643,6 +10991,123 @@ function openDeptCommentsPhotosModal(opts){
   });
 }
 
+
+
+function renderAdmin5SRatingHub(){
+  var wrap = el('<div></div>');
+  var panel = el('<div class="admin-panel"></div>');
+  panel.appendChild(el('<h3>5S Rating</h3>'));
+  panel.appendChild(el('<div class="note" style="margin-bottom:12px;">Choose a department to enter rating, comments and photos. Floor is daily · Office is monthly.</div>'));
+
+  if(!state.adminRatingDate) state.adminRatingDate = todayStr();
+  if(!state.adminOfficeRatingMonth) state.adminOfficeRatingMonth = todayStr().slice(0,7);
+
+  var pickers = el(
+    '<div class="s5-rate-pickers">'+
+      '<div class="field-row"><label>Floor audit date</label><input type="date" id="s5-floor-date" value="'+escapeAttr(state.adminRatingDate)+'"></div>'+
+      '<div class="field-row"><label>Office audit month</label><input type="month" id="s5-office-month" value="'+escapeAttr(state.adminOfficeRatingMonth)+'"></div>'+
+    '</div>'
+  );
+  panel.appendChild(pickers);
+
+  var grid = el('<div class="s5-rate-hub"></div>');
+  var floorCol = el('<div class="s5-rate-col"></div>');
+  var officeCol = el('<div class="s5-rate-col"></div>');
+  floorCol.appendChild(el('<div class="s5-rate-col-title">Floor</div>'));
+  officeCol.appendChild(el('<div class="s5-rate-col-title s5-rate-col-title-office">Office</div>'));
+  var floorGrid = el('<div class="s5-rate-dept-grid" id="s5-floor-grid"></div>');
+  var officeGrid = el('<div class="s5-rate-dept-grid" id="s5-office-grid"></div>');
+  floorCol.appendChild(floorGrid);
+  officeCol.appendChild(officeGrid);
+  grid.appendChild(floorCol);
+  grid.appendChild(officeCol);
+  panel.appendChild(grid);
+  wrap.appendChild(panel);
+
+  function scoreLabel(store, key, deptId){
+    var day = store[key] || {};
+    var v = day[deptId];
+    return (typeof v === "number") ? fmt1(v) : "";
+  }
+
+  function fillFloor(){
+    floorGrid.innerHTML = "";
+    var dateStr = state.adminRatingDate || todayStr();
+    var depts = (state.config && state.config.departments) || [];
+    if(!depts.length){
+      floorGrid.appendChild(el('<div class="note">No floor departments.</div>'));
+      return;
+    }
+    depts.forEach(function(dep){
+      var sc = scoreLabel(state.ratings, dateStr, dep.id);
+      var btn = el(
+        '<button type="button" class="s5-rate-dept-btn">'+
+          '<span>'+escapeHtml(dep.name)+'</span>'+
+          (sc ? '<em>'+escapeHtml(sc)+'</em>' : '')+
+        '</button>'
+      );
+      btn.addEventListener("click", function(){
+        openDeptCommentsPhotosModal({
+          scope:"floor",
+          deptId: dep.id,
+          deptName: dep.name,
+          ratingKey: dateStr,
+          allowRatingEdit: true,
+          onClose: function(){ fillFloor(); fillOffice(); }
+        });
+      });
+      floorGrid.appendChild(btn);
+    });
+  }
+
+  function fillOffice(){
+    officeGrid.innerHTML = "";
+    var ym = officeMonthKey(state.adminOfficeRatingMonth || todayStr().slice(0,7));
+    var depts = (state.config && state.config.officeDepartments) || [];
+    if(!depts.length){
+      officeGrid.appendChild(el('<div class="note">No office departments.</div>'));
+      return;
+    }
+    depts.forEach(function(dep){
+      var sc = scoreLabel(state.officeRatings, ym, dep.id);
+      var btn = el(
+        '<button type="button" class="s5-rate-dept-btn">'+
+          '<span>'+escapeHtml(dep.name)+'</span>'+
+          (sc ? '<em>'+escapeHtml(sc)+'</em>' : '')+
+        '</button>'
+      );
+      btn.addEventListener("click", function(){
+        openDeptCommentsPhotosModal({
+          scope:"office",
+          deptId: dep.id,
+          deptName: dep.name,
+          ratingKey: ym,
+          allowRatingEdit: true,
+          onClose: function(){ fillFloor(); fillOffice(); }
+        });
+      });
+      officeGrid.appendChild(btn);
+    });
+  }
+
+  fillFloor();
+  fillOffice();
+
+  setTimeout(function(){
+    var fd = document.getElementById("s5-floor-date");
+    var om = document.getElementById("s5-office-month");
+    if(fd) fd.addEventListener("change", function(){
+      state.adminRatingDate = fd.value || todayStr();
+      fillFloor();
+    });
+    if(om) om.addEventListener("change", function(){
+      state.adminOfficeRatingMonth = om.value || todayStr().slice(0,7);
+      fillOffice();
+    });
+  }, 0);
+
+  return wrap;
+}
 
 function renderAdminRatings(){
   var wrap = el('<div></div>');
@@ -10673,6 +11138,7 @@ function renderAdminRatings(){
 
   function fillGrid(dateStr){
     list.innerHTML = "";
+    list.className = "rate-dept-btn-list";
     var dayVals = state.ratings[dateStr] || {};
     var depts = state.config.departments || [];
     if(!depts.length){
@@ -10680,21 +11146,28 @@ function renderAdminRatings(){
       return;
     }
     depts.forEach(function(dep){
-      var existing = (typeof dayVals[dep.id]==="number") ? dayVals[dep.id] : "";
-      var ph = "";
-      try{ ph = fmt1(effectiveRating(dep.id, addDays(dateStr,-1))); }catch(e){ ph = ""; }
-      var row = el(
-        '<div class="rate-list-row">'+
-          '<span class="rate-name">'+escapeHtml(dep.name)+'</span>'+
-          '<input type="number" inputmode="decimal" step="0.1" min="0" max="10" data-deptid="'+escapeAttr(dep.id)+'" value="'+existing+'" placeholder="'+escapeAttr(ph)+'">'+
-        '</div>'
+      var existing = (typeof dayVals[dep.id]==="number") ? dayVals[dep.id] : null;
+      var scoreTxt = (existing===null) ? "—" : fmt1(existing);
+      var btn = el(
+        '<button type="button" class="rate-dept-btn" data-deptid="'+escapeAttr(dep.id)+'">'+
+          '<span class="rate-dept-btn-name">'+escapeHtml(dep.name)+'</span>'+
+          '<span class="rate-dept-btn-score">'+escapeHtml(scoreTxt)+'</span>'+
+        '</button>'
       );
-      var cpBtn = el('<button type="button" class="btn small btn-cp">Comments &amp; Photos</button>');
-      cpBtn.addEventListener('click', function(){
-        openDeptCommentsPhotosModal({scope:"floor", deptId:dep.id, deptName:dep.name});
+      btn.addEventListener('click', function(){
+        openDeptCommentsPhotosModal({
+          scope:"floor",
+          deptId:dep.id,
+          deptName:dep.name,
+          ratingKey: dateStr,
+          allowRatingEdit: true,
+          onClose: function(){
+            var d = document.getElementById("rate-date");
+            fillGrid(d && d.value ? d.value : dateStr);
+          }
+        });
       });
-      row.appendChild(cpBtn);
-      list.appendChild(row);
+      list.appendChild(btn);
     });
     var awRec = state.awareness[dateStr] || {};
     var awStaffInp = document.getElementById("aw-staff");
@@ -10758,6 +11231,7 @@ function renderAdminOfficeRatings(){
 
   function fillGrid(ym){
     list.innerHTML = "";
+    list.className = "rate-dept-btn-list";
     ym = officeMonthKey(ym);
     var dayVals = state.officeRatings[ym] || {};
     var depts = state.config.officeDepartments || [];
@@ -10766,21 +11240,28 @@ function renderAdminOfficeRatings(){
       return;
     }
     depts.forEach(function(dep){
-      var existing = (typeof dayVals[dep.id]==="number") ? dayVals[dep.id] : "";
-      var ph = "";
-      try{ ph = fmt1(effectiveOfficeRating(dep.id, prevMonthKey(ym))); }catch(e){ ph = ""; }
-      var row = el(
-        '<div class="rate-list-row">'+
-          '<span class="rate-name">'+escapeHtml(dep.name)+'</span>'+
-          '<input type="number" inputmode="decimal" step="0.1" min="0" max="10" data-deptid="'+escapeAttr(dep.id)+'" value="'+existing+'" placeholder="'+escapeAttr(ph)+'">'+
-        '</div>'
+      var existing = (typeof dayVals[dep.id]==="number") ? dayVals[dep.id] : null;
+      var scoreTxt = (existing===null) ? "—" : fmt1(existing);
+      var btn = el(
+        '<button type="button" class="rate-dept-btn" data-deptid="'+escapeAttr(dep.id)+'">'+
+          '<span class="rate-dept-btn-name">'+escapeHtml(dep.name)+'</span>'+
+          '<span class="rate-dept-btn-score">'+escapeHtml(scoreTxt)+'</span>'+
+        '</button>'
       );
-      var cpBtn = el('<button type="button" class="btn small btn-cp">Comments &amp; Photos</button>');
-      cpBtn.addEventListener('click', function(){
-        openDeptCommentsPhotosModal({scope:"office", deptId:dep.id, deptName:dep.name});
+      btn.addEventListener('click', function(){
+        openDeptCommentsPhotosModal({
+          scope:"office",
+          deptId:dep.id,
+          deptName:dep.name,
+          ratingKey: ym,
+          allowRatingEdit: true,
+          onClose: function(){
+            var m = document.getElementById("orate-month");
+            fillGrid(m && m.value ? m.value : ym);
+          }
+        });
       });
-      row.appendChild(cpBtn);
-      list.appendChild(row);
+      list.appendChild(btn);
     });
   }
   fillGrid(state.adminOfficeRatingMonth);
